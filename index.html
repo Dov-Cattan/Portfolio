@@ -1,180 +1,783 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Dov Cattan</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/img/Dov-Cattan.jpeg" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">Dov Cattan</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <!--<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="resume.html">Resume</a></li>
-                        -->
 
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/Dov-Cattan.jpeg" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Dov Cattan</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-circle"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Computer Engineer - Hardware Engineer</p>
-            </div>
-        </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Dov Cattan - Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Dov Cattan</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.github.com/dov-cattan" class="google-plus"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/dov-cattan" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#home" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        
+          <li class="dropdown"><a href="#resume"><i class="bi bi-folder navicon"></i><span>Resume</span></i><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            
+          <ul>
+            <nav id="navmenu" class="navmenu">
+            <li><a href="#Current Side Project">Current Side Project</a></li>
+            <li><a href="#Work Experience">Work Experience</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Professional Club Experience">Professional Club Experience</a></li>
+            <li><a href="#Notable School Projects">Notable School Projects</a></li>
+            <li><a href="#Undergraduate Research Experience">Undergraduate Research Experience</a></li>
+            <li><a href="#Indie Game Developer">Indie Game Developer</a></li>
+            </nav>
+          </ul>
+      
+          </li>
+        
+       
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#skills"><i class="bi bi-list-check navicon"></i> Skills</a></li>
+        
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- home Section -->
+    <section id="home" class="home section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Dov Cattan</h2>
+        <p>I'm a <span class="typed" data-typed-items="Computer Engineer, Electronics Engineer, PCB Designer, Embedded Engineer, Game Designer">Computer Engineer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /home Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+     
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>I'm a talented and creative individual looking to engineer the next big wave. Broad experience in developing electronics, firmware, and simulations. Designs Circuit Boards, Embedded Software, FPGA Logic, Video Games, and Wiring Diagrams. Self-motivated, independent, problem solver, and a detail-oriented team player. Modifies, enhances, and tests existing hardware and software. Loves to fix the bugs!</p>
+      </div>
+
+
+
+    </section><!-- /About Section -->
+
+ 
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+     
+
+      <div class="container">
+ <!-- Section Title -->
+ <div class="container section-title" data-aos="fade-up">
+  <h2>Resume</h2>
+ 
+</div><!-- End Section Title -->
+        <div class="row">
+          
+       
+
+          
+
+         <section id = "Current Side Project"> </section>
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="Current Side Project">Current Side Project</h3> 
+            <div class="resume-item">
+              
+              <h4>Data Acquisition for Remote Control Car using RF and LoRa</h4>
+              <h5>May 2024 - Present</h5>
+              
+              <ul>
+                <li> Goal of the project is to show that data can be transferred from a transmitter to a receiver using RF and LoRa.</li>
+                <li>Built the schematics for the transmitter and receiver on KiCAD.</li>
+                <li> Currently making the firmware in C++ to be programmed onto an Arduino for the Transmitter and ESP 32 for the Receiver. Software will be tested on 
+                  breadboard designs based on the schematics.</li>
+                <li>Data that will be transmitted to the receiver will include: GPS Coordinates, Speed, Rotation, Altitude, and Temperature. Transmitter data will be saved 
+                  onto an SD Card as well.</li>
+                <li>Will create the Printed Circuit Boards once the Firmware is complete.</li>
+                <li>After the delivery of the PCBs the project will be tested outdoors with the transmitter placed on an RC Car, and the receiver will be held by myself to 
+                  compare how well RF or LoRa communication can work at long distances.</li>
+               
+              </ul>
+            </div><!-- Edn Resume Item -->
+          
+         
+         
+            <section id = "Work Experience"></section>
+            <h3 class="Work Experience">Work Experience</h3>
+            <div class="resume-item">
+              <h4>Electrical Engineering Intern</h4>
+              <h5>May 2023 - August 2023</h5>
+              <p><em>Motorola Solutions, Plantation, FL </em></p>
+              <ul>
+                <li>Designed a 7th-order Elliptical Harmonic Filter to improve harmonic filtering for their 800-900 MHz Band Radios. Filter was created to meet the required 
+                  insertion, return, and rejection loss specifications that were later handed off to Senior Engineers to continue toward completion.</li>
+                <li>Created programs with LabVIEW that were able to measure current and voltage from a multimeter using a state machine. Able to show that the program 
+                  interacts with electrical testing instruments on LabVIEW using drivers, Python, and SCIPI commands. </li>
+                <li>Built a Schematic and Printed Circuit Board using Cadence so Motorola can add GNSS capabilities on their Radios.</li>
+                <li>Gave a technical presentation of my accomplishments to senior management, the engineering team, and fellow interns.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Engineering Intern (Embedded Software)</h4>
+              <h5>February 2023 - April 2023</h5>
+              <p><em>Pixels on Target LLC, Sunrise, FL</em></p>
+              <ul>
+                <li>Designed a GUI that allows users to interact with a Sionyx Night Vision Camera using Python with the PyQt Library.</li>
+                <li>Modeled and 3D Printed a stand using SolidWorks to hold the Night Vision Camera.</li>
+                <li>Pixels on Target was able to utilize the GUI and stand for the Sionyx Night Vision Camera after successful testing was completed to validate the design.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Radio and Antenna Engineering Intern</h4>
+              <h5>September 2022 - November 2022</h5>
+              <p><em>ObjectSecurity LLC, San Diego, CA</em></p>
+              <ul>
+                <li>Researched virtual CAN Simulation tools for the company to improve automotive security.</li>
+                <li>Reported to supervisor that Simulink was the best tool to simulate the transmission and reception of CAN messages.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Engineering Intern (QA Automation)</h4>
+              <h5>May 2021 - August 2021</h5>
+              <p><em>Telit Cinterion, Boca Raton, FL</em></p>
+              <ul>
+                <li>Simulated IOT Devices on Airplans and Geofences on a world map using the Telit cloud portal to show the Software Developers proficiency with JavaScript.</li>
+                <li>Performed quality assurance automated testing on Telit's cloud server DeviceWise using JavaScript and Cucumber to test for faults.</li>
+                <li>Reported to the Development team whenever there was a bug on the site using Jira, and published the code with Gitlab.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          
+     
+            <section id = "Education"></section>
+           <h3 class="Education">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Science in Computer Engineering</h4>
+              <h5>August 2023 - August 2024</h5>
+              <p><em>Florida Atlantic University, Boca Raton, FL</em></p>
+              <h6>GPA: 3.42</h6>
+              <p>Relevant Coursework: Design of Digital Systems, CMOS Amplifiers, Embedded Systems Design I, Data Mining and Machine Learning</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Bachelor of Science in Computer Engineering</h4>
+              <h5>June 2019 - May 2023</h5>
+              <p><em>Florida Atlantic University, Boca Raton, FL</em></p>
+              <h6>GPA: 3.42</h6>
+              <p>Relevant Coursework: Electronics 1 and Lab, 3D Modeling and Design, Robotic Applications, Engineering Math (With Python)</p>
+            </div><!-- Edn Resume Item -->
+
+            <section id = "Professional Club Experience"></section>
+            <h3 class="Professional Club Experience">Professional Club Experience</h3> 
+            <div class="resume-item">
+              <h4>Electrical Team Member</h4>
+              <h5>September 2021 - May 2024</h5>
+              <p><em>Owls Racing/FAU FSAE, Boca Raton, FL</em></p>
+              <ul>
+                <li>Worked with a team of 4 engineers to develop gear-shifting capability with a microcontroller as opposed to a direct connection.</li>
+                <li>Started off by working with the team to document the specifications and to design the breadboard prototype for the shifting board.</li>
+                <li>Designed the schematic and PCB for the shifting board with KiCAD using the documentation and the breadboard prototype.</li>
+                <li>The shifting PCB was able to allow the user to shift gears using the microcontroller, resulting in more reliable shifting for the annual Nationwide FSAE Competition in Michigan.</li>
+                <li>Created a pinout for an electronic throttle control harness by testing for continuity from each harness pin to the Engine Control Unit (ECU).</li>
+               
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Member</h4>
+              <h5>January 2024 - April 2024</h5>
+              <p><em>Aerospace Experimental Association at FAU, Boca Raton, FL</em></p>
+              <ul>
+                <li>Helped design the electronic layout for the Environment Control System for proper deployment of the weather balloon payload. It allowed the Raspberry Pi that was being used to collect data from sensors to be used in space.</li>
+                <li>Worked alongside a multi-discipline team of mechanical engineers and a computer scientist to assist with the design.</li>
+                <li>The electronics allowed the collection of data for GMO Tobacco Plants to be successful in altitudes of over 100,000 feet.</li>
+               
+              </ul>
+            </div><!-- Edn Resume Item -->
+          
+
+       
+            <h3 class="Notable School Projects">Notable School Projects</h3> 
+            <div class="resume-item">
+              <h4>IR Car Speed Detector Project</h4>
+              <h5>October 2023</h5>
+              <ul>
+                 <li>Designed the Schematic and PCB on KiCAD for the project to structure the wiring and the placement of the components.</li>
+                 <li>The software was tested on a breadboard with the components prior to the delivery of the PCBs.</li>
+                <li>Presented the project in the Embedded Systems Design I class to show the successful implementation of the use of IR sensors for detecting if a car is 
+                  going at normal speed or too fast.</li>
+               
+              </ul>
+            </div><!-- Edn Resume Item -->
+          
+
+           <div class="resume-item">
+            <h4>The Cane Tank</h4>
+            <h5>May 2022 - August 2022</h5>
+            <ul>
+               <li>Led the team in building the Cane tank, which is an inventory site for a make-believe retirement home.</li>
+               <li>The Site was built by the team using HTML, CSS, and JS for design, PHP for hosting, and GitHub for collaboration.</li>
+              <li>Presented the project in the Principles of Software Engineering class by giving a demo to the professor and fellow colleagues.</li>
+             
+            </ul>
+           </div><!-- Edn Resume Item -->
+        
+    
+           <section id = "Undergraduate Research Experience"></section>
+            <h3 class="Undergraduate Research Experience">Undergraduate Research Experience</h3> 
+            <div class="resume-item">
+              <h4>Center of Autonomy and Artificial Intelligence</h4>
+              <h5>November 2021 - April 2022</h5>
+              <p><em>Florida Atlantic University, Boca Raton, FL</em></p>
+              <ul>
+                <li>The goal of my research was to simulate multiple autonomous robots navigating an area with the Rapidly-exploring Random Tree (RRT) algorithm and finding an AR Tag using ROS Melodic, RVIZ, and Gazebo.</li>
+                <li>Able to show RRT was capable of having robots navigate an area autonomously with the designed simulation.</li>
+               
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Machine Perception Cognitive Robotics Laboratory</h4>
+              <h5>January 2021 - May 2021</h5>
+              <p><em>Florida Atlantic University, Boca Raton, FL</em></p>
+              <ul>
+                <li>Created A Fish Tank Environment using Unity 3D, which contains the school of fish and the ML Agent Whales.</li>
+                <li>Built a fish spawner to generate the fish, and made a boids algorithm for the fish to stay in the tank using C#.</li>
+                <li>The Fish Tank Simulation was handed off to a PhD Student for further research.</li>
+
+               
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+        
+            <section id = "Indie Game Developer"></section>
+            <h3 class="Indie Game Developer">Indie Game Developer</h3> 
+            <div class="resume-item">
+              <h4>2K0 Games</h4>
+              <h5>August 2017 - December 2021</h5>
+              <p><em>Sky Ball</em></p>
+              <ul>
+                <li>Modified Unity’s Roll-A-Ball script by adding more levels, removing walls, adding obstacles, recording a high score, and creating different controls so it can be cross-platform</li>
+                <li>C# Scripts were created to move the ball, record the score, and destroy the player when needed.</li>
+               
+              </ul>
+
+              <p><em>Grimlucks Great Adventure</em></p>
+              <ul>
+                <li>Grimluck’s Great Adventure is an Android 2D Text Adventure game that allows you to choose your destiny, as a C# Script causes the scenes to get switched after every button press.</li>
+              </ul>
+
+              <p><em>Answer Buttons</em></p>
+              <ul>
+                <li>Answer Buttons allow you answer anything by pressing buttons which uses a C# Script that switches scenes or plays audio after every button press.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+         
+
+          
+         
+          
+    
+   
+          </div>
+      
+
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+            </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-motorola">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/motorola-3.JPG" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/motorola-2.jpg" class="img-fluid" alt="">
+                <p><br>Designed a 7th-order elliptic filter (top-left) to meet the specifications given by Motorola for 800-900 MHz communication using Keysight ADS. Then the Capacitors and Inductors on the Schematic were SMT Soldered to a prototyping board. It was then tested on the Vector Network Analyzer (top-right) using Soldered Pigtails on each side of the circuit.
+                </p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-motorola">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/motorola-1.jpg" class="img-fluid" alt="">
+                <p><br>Cadence Allegro Schematic for the GNSS Addition to Motorola’s Radios. Includes GNSS Receiver, Low Noise Amplifier, and Oscillators. Schematic was transitioned into a PCB.
+                </p>
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+            
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-axa">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/axa-1.jpg" class="img-fluid" alt="">
+                <p><br>Raspberry Pi with custom Hat on top of the Environmental Control System</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-axa">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/axa-2.jpg" class="img-fluid" alt="">
+                <p><br>Completed Environmental Control System inside the Styrofoam payload box</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-axa">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/axa-3.jpg" class="img-fluid" alt="">
+                <p><br>High-Altitude Balloon with GMO Tobacco Plant Payload launched at its peak (100,000 feet).</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/owls-racing-2.jpg" class="img-fluid" alt="">
+                <p><br>Components for the digital-to-analog shifting included MOSFETS, Microswitches, Buck Converter, ESP 32 MCU, Flyback Diodes, Capacitors, and Resistors.
+                  12V of Simulated Motor Power (Power Supply) was connected to the Solenoids for Prototype testing before the final schematic was made on KiCAD.
+                  </p>
+               
+              </div>
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/owls-racing-3.JPG" class="img-fluid" alt="">
+                <p><br>Final schematic for the shifting PCB</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/owls-racing-1.JPG" class="img-fluid" alt="">
+                <p><br>PCB was made based on the previous schematic and footprints were edited to allow for wires to be soldered on the PCB as opposed to hardwiring.  <br>
+                  A copper board was used to have the CNC Mill transform it into a PCB based on the Design. <br>
+                  Parts were soldered and then powered by the solenoids used for pneumatic shifting.
+                  </p>
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+           
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IR PCB - 3.JPG" class="img-fluid" alt="">
+                <p><br>Flags activate the timer that times how long it takes for the car to reach from one IR Sensor to the other.
+                  <br>
+                  Results are displayed on the LCD on whether the car is going over 50 MPH (based on the conversions) or going at normal speed ≤ 50 MPH.
+                  </p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IR PCB - 1.JPG" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/ir pcb -2.JPG" class="img-fluid" alt="">
+               <p><br>Using KiCAD, ESP 32 MCU was used to connect to the 2 IR Sensors, Buzzer, and a potentiometer-controlled LCD Display in the design. <br>The Buck Converter allowed the ESP 32 to be powered by a 9V Battery (ESP 32 can only take up to 5V).</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            
+
+           
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IR PCB - 4.JPG" class="img-fluid" alt="">
+               <p><br>Parts are soldered onto the board based on the PCB Design.<br><a href="https://www.linkedin.com/posts/dov-cattan_here-is-my-update-on-the-ir-car-speed-detector-activity-7127284851317067776-2LQh"  class="linkedin">Demo Link</a>
+               </p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/Game.png" class="img-fluid" alt="">
+               <p><br>Sky Ball Cube Collector: Level 5.<br><a href="https://2k0games.itch.io/sky-ball">Link To Play The Game Here!</a></p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/Robot.png" class="img-fluid" alt="">
+               <p><br>Multirobot Navigation Using RRT Algortihm to autonomously explore an area in ROS, RVIZ, and Gazebo. <br>
+                 Blue represents areas that the robot has explored (global trees), red represents areas that the robot is currently exploring (local trees). <br>
+                All robots that are being simulated in this environment are the Turtlebot 3 Model.</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/Pong PCB.jpg" class="img-fluid" alt="">
+               <p><br>PCB that Plays Pong using an Arduino Nano and LCD Screen. <br> The four buttons allow two players to moves the puck against each other.</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+           
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+      
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        
+      </div><!-- End Section Title -->
+
+      
+
+      <!--Software Skills-->
+      <div class="container section-title" data-aos="fade-up">
+      <p><br>Engineering Software Skills:</p>
+    </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>KiCAD</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+         
+
+          
+
+     
+
+            <div class="progress">
+              <span class="skill"><span>Unity Game Engine</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>LabVIEW</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Keysight ADS</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Cadence Allegro</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+
+            <div class="progress">
+              <span class="skill"><span>Xilinx Vivado</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>ROS</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>SolidWorks</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Simulink</span> <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!--Instrumentation Skills-->
+      <div class="container section-title" data-aos="fade-up">
+      <p><br>Instrumentation Skills:</p></div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Multimeter</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+   
+
+          
+
+         
+
+            <div class="progress">
+              <span class="skill"><span>Power Supply</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          
+
+            <div class="progress">
+              <span class="skill"><span>Vector Network Analyzer</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Function Generator</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Oscilloscope</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!--Programming Skills-->
+      <div class="container section-title" data-aos="fade-up"><p><br>Programming Skills:</p></div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Python</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+         
+
+         
+
+            <div class="progress">
+              <span class="skill"><span>C/C++</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>VHDL</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>MATLAB</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+   
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+           
+              <h2>Dov Cattan<br><br></h2>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                
                  
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Capture3.PNG" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                 
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/1655307994427.jpg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                 
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/1683422556543.jpg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                 
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/1693366174383.jpg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Capture.PNG" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Capture1.PNG" alt="..." />
-                        </div>
-                    </div>
+                <i class="bi bi-telephone"></i>
+                <div>
+                  <h3>Phone</h3>
+                  <p><a href="tel:+15616176359">561-617-6359</a></p>
                 </div>
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p><a href="mailto:dovcattan10@outlook.com">dovcattan10@outlook.com</a></p>
                 </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Dov Cattan is a Computer Engineer at FAU who is talented and creative individual looking to design and program the next big wave. Broad experience in designing games in both coding, creating the environment and all other aspects. Designs Circuit Boards, FPGA components, Embedded Software, and Wiring Diagrams. Self-motivated, independent, detailed oriented team player. Modifies and enhances existing software and hardware. Loves to fix the bugs</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">Latest Work Experience: Spent this past summer as an Electrical Engineering Intern at Motorola Solutions, and now currently doing research with Field Programmable Gate Arrays (FPGAs) and One Instruction Set Computing (OISC) with the Machine Perception Cognitive Robotics (MPCR) Laboratory at Florida Atlantic University</p></div>
+              </div><!-- End Info Item -->
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                
+                  <i class="bi bi-linkedin"></i>
+                  <div>
+                  <h3>LinkedIn</h3>
+                  
+                 <p><a href="https://www.linkedin.com/in/dov-cattan">https://www.linkedin.com/in/dov-cattan</a> </p> 
                 </div>
                
-            </div>
-        </section>
-       
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                   
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Where you can find me throughout the web</h4>
-                        
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/dov-cattan/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/Dov-Cattan"><i class="fab fa-fw fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/2K0Games"><i class="fab fa-fw fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://mpcrlab.com/people/Dov-Cattan/"></a>
-                    </div>
-                    
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Made by Dov Cattan</small></div>
-            <div class="container"><p>You can contact me via email at: dovcattan10@outlook.com</p></div>
-        </div>
-       
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+              </div><!-- End Info Item -->
+             
+
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+   
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+       Site designed by Dov Cattan using HTML, CSS and Javascript.
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
